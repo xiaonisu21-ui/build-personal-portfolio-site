@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fictional bilingual portfolio demo generated for an open-source Codex Skill." />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f4f1e9" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio Demo</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <div class="demo-bar" role="note">
+      <span class="demo-dot" aria-hidden="true"></span>
+      <span data-i18n="disclosure"></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到顶部"><span data-bind="shortName"></span><i>.</i></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+      <nav id="site-nav" class="site-nav" aria-label="主要导航"></nav>
+      <button class="language-button" type="button" aria-label="Switch language">EN</button>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-bind="hero.eyebrow"></p>
+          <h1><span data-bind="hero.greeting"></span><br /><em data-bind="name"></em></h1>
+          <p class="hero-role" data-bind="role"></p>
+          <p class="hero-statement" data-bind="hero.statement"></p>
+          <p class="hero-summary" data-bind="hero.summary"></p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#cases" data-bind="hero.primaryCta"></a>
+            <a class="button button-light" href="#contact" data-bind="hero.secondaryCta"></a>
+          </div>
+          <div class="highlight-list" id="hero-highlights"></div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="portrait-frame">
+            <img src="demo-avatar.png" alt="AI 生成的虚构人物肖像" data-alt="portraitAlt" />
+            <span class="portrait-label" data-bind="hero.portraitLabel"></span>
+          </div>
+          <div class="availability-card">
+            <span class="status-dot"></span>
+            <span data-bind="hero.availability"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-strip">
+        <p data-bind="intro"></p>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow" data-bind="sectionLabels.skills"></p><h2 data-bind="sectionTitles.skills"></h2></div>
+          <p data-bind="sectionIntros.skills"></p>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </section>
+
+      <section class="section section-tinted" id="experience">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow" data-bind="sectionLabels.experience"></p><h2 data-bind="sectionTitles.experience"></h2></div>
+          <p data-bind="sectionIntros.experience"></p>
+        </div>
+        <div class="experience-list" id="experience-list"></div>
+      </section>
+
+      <section class="section" id="cases">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow" data-bind="sectionLabels.cases"></p><h2 data-bind="sectionTitles.cases"></h2></div>
+          <p data-bind="sectionIntros.cases"></p>
+        </div>
+        <div class="case-grid" id="case-grid"></div>
+      </section>
+
+      <section class="project section" id="project">
+        <div class="project-copy reveal">
+          <p class="eyebrow" data-bind="project.eyebrow"></p>
+          <h2 data-bind="project.title"></h2>
+          <p class="project-lead" data-bind="project.lead"></p>
+          <p data-bind="project.description"></p>
+          <div class="project-features" id="project-features"></div>
+        </div>
+        <div class="project-board reveal" aria-label="产品概念界面">
+          <div class="board-top"><span data-bind="project.mockupLabel"></span><span>•••</span></div>
+          <div class="board-card board-accent"><small>RESEARCH PULSE</small><strong data-bind="project.mockupMetric"></strong></div>
+          <div class="board-grid">
+            <div class="board-card"><small>01</small><strong data-bind="project.mockupA"></strong><span class="bar bar-a"></span></div>
+            <div class="board-card"><small>02</small><strong data-bind="project.mockupB"></strong><span class="bar bar-b"></span></div>
+          </div>
+          <div class="board-card board-list"><small>INSIGHT CLUSTERS</small><span></span><span></span><span></span></div>
+        </div>
+      </section>
+
+      <section class="section section-tinted" id="journey">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow" data-bind="sectionLabels.journey"></p><h2 data-bind="sectionTitles.journey"></h2></div>
+          <p data-bind="sectionIntros.journey"></p>
+        </div>
+        <ol class="journey-list" id="journey-list"></ol>
+      </section>
+
+      <section class="section profile-section" id="profile">
+        <div class="profile-column reveal">
+          <p class="eyebrow" data-bind="sectionLabels.education"></p>
+          <h2 data-bind="sectionTitles.education"></h2>
+          <div id="education-list"></div>
+        </div>
+        <div class="profile-column reveal">
+          <p class="eyebrow" data-bind="sectionLabels.about"></p>
+          <h2 data-bind="sectionTitles.about"></h2>
+          <h3 data-bind="traits.title"></h3>
+          <div class="tag-list" id="trait-list"></div>
+          <p class="profile-note" data-bind="traits.description"></p>
+          <h3 data-bind="interests.title"></h3>
+          <div class="tag-list" id="interest-list"></div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <p class="eyebrow" data-bind="sectionLabels.contact"></p>
+        <h2 data-bind="contact.title"></h2>
+        <p data-bind="contact.description"></p>
+        <a class="contact-link" href="mailto:hello@example.com" data-bind="contact.email"></a>
+        <p class="contact-note" data-bind="contact.note"></p>
+      </section>
+    </main>
+
+    <footer>
+      <strong><span data-bind="shortName"></span><i>.</i></strong>
+      <p data-bind="footer"></p>
+      <p data-i18n="disclosure"></p>
+    </footer>
+
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+

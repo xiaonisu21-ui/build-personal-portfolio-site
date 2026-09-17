@@ -1,0 +1,9 @@
+interface:
+  display_name: "Personal Portfolio Site Builder"
+  short_description: "Build a bilingual, privacy-safe portfolio website."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#3F855F"
+  default_prompt: "Use $build-personal-portfolio-site to turn my resume and case studies into a bilingual, privacy-safe portfolio website."
+policy:
+  allow_implicit_invocation: true

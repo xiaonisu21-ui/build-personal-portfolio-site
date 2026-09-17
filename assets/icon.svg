@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Portfolio Site Builder">
+  <rect width="128" height="128" rx="28" fill="#17211c"/>
+  <rect x="25" y="22" width="78" height="84" rx="12" fill="#f4f1e9"/>
+  <circle cx="49" cy="48" r="11" fill="#6ca483"/>
+  <path d="M34 77c4-10 11-15 20-15s16 5 20 15" fill="none" stroke="#17211c" stroke-width="7" stroke-linecap="round"/>
+  <path d="M79 41h13M79 54h13M79 67h13M36 91h56" fill="none" stroke="#6ca483" stroke-width="6" stroke-linecap="round"/>
+</svg>
+
