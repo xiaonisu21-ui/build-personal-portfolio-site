@@ -4,7 +4,7 @@
 
 > 仓库内的示例人物“林知夏”、经历、公司、案例、指标与肖像均为虚构或 AI 生成，仅用于展示模板能力，不对应任何真实个人。
 
-[在线示例](https://xiaonisu21-ui.github.io/build-personal-portfolio-site/) · [安装 Skill](#安装) · [直接使用静态模板](#不安装-skill直接使用模板)
+[安装 Skill](#安装) · [直接使用静态模板](#不安装-skill直接使用模板)
 
 ## 它能做什么
 
@@ -51,8 +51,6 @@ assets/starter-site/           无构建依赖的双语网站模板
 references/                    内容模型与隐私发布清单
 scripts/create_site.mjs        创建一份可编辑网站
 scripts/validate_site.mjs      网站结构与隐私扫描
-docs/                          GitHub Pages 在线示例
-promo/xiaohongshu/             小红书发布素材与文案
 ```
 
 ## 设计与隐私原则
@@ -70,4 +68,3 @@ This is an open-source Codex Skill for turning resumes and project evidence into
 ## License
 
 MIT
-

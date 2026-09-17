@@ -5,3 +5,9 @@ node_modules/
 !.env.example
 *.log
 
+# Personal publishing assets are kept locally, not distributed with the Skill.
+promo/xiaohongshu/
+
+# Local preview and publishing outputs are not part of the installable Skill.
+docs/
+screenshots/
